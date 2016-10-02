@@ -11,7 +11,7 @@
     <!--Google -->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-  
+
 
     <title>Google Map Assessment</title>
 </head>
@@ -26,19 +26,30 @@
                 <input type="text" id="location" class="form-control col-md-4" placeholder="Location">
                 <button id="getMap" class="btn btn-warning">Get Google Map Location</button>
                 <button id="delete" class="btn btn-danger">Delete Locations</button>
-                <div id="map"></div>
+                <div id="map" style='overflow:hidden;height:400px;width:400px;'></div>
                
-  
-                
-              </div>
+
+    <div id='gmap_canvas' style='height:400px;width:400px;'></div>
+    <div><small><a href="http://www.embedgooglemaps.com/en/"></a></small></div>
+   <style>
+        #gmap_canvas img {
+            max-width: none!important;
+            background: none!important
+        }
+    </style>
+</div>
+
+
 
             </div>
 
-
-            <!--3rd column. no info -->
-            <div class="col-md-4 none"> </div>
-
         </div>
+
+
+        <!--3rd column. no info -->
+        <div class="col-md-4 none"> </div>
+
+    </div>
     </div>
 
 
@@ -54,12 +65,13 @@
         crossorigin="anonymous"></script>
     <!-- Our project JS -->
     <script src="googleMapAssesment.js"></script>
-     
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+
 
 
 </body>
-<footer>
-
+<footer><Center>
+<a href="http://www.embedgooglemaps.com/en/">Embed google Map!</a>
 </footer>
 
 
