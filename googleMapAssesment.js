@@ -20,7 +20,7 @@ $(function () {
             } google.maps.event.addDomListener(window, 'load', init_map);
             var div = $("<div></div>");
             var div = $("<div></div>");
-            $("#map").append(init_map);
+            $(".map").append(init_map);
         });
     });
 });
