@@ -22,6 +22,7 @@ $(function () {
             var div = $("<div></div>");
             $(".map").append(init_map);
         });
+
     });
 });
 
